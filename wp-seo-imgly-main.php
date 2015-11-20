@@ -6,8 +6,8 @@ class SEOImgly
 	public $key = 'wp-seo-imgly';
 
 	static $options = array(
-		'post_title' => 'Título do post',
 		'image_name' => 'Nome da imagem',
+		'post_title' => 'Título do post',
 		'post_cat'   => 'Categoria do post',
 		'meta_desc'  => 'Descrição da META',
 		'site_name'  => 'Nome do site'

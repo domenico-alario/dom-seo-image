@@ -16,8 +16,8 @@
 		<hr />
 		<h4>Monte sua configuração</h4>
 		<p>Abaixo você pode de forma prática e rápida montar como as tags <b>ALT</b> e <b>TITLE</b> das suas imagens devem ser.</p>
-		<p><b>Título do post</b> - O título do post é o título dado a sua postagem na hora da criação.</p>
 		<p><b>Nome da imagem</b> - O nome da imagem é o nome dado a uma imagem no momento que você a carrega no seu post.<br /><b style="color: red">Para evitar duplicidade nos nomes gerados é altamente recomendado sempre utilizar essa opção.</b></p>
+		<p><b>Título do post</b> - O título do post é o título dado a sua postagem na hora da criação.</p>
 		<p><b>Categoria do post</b> - Nome da categoria a qual o post pertecem.</p>
 		<p><b>Descrição META</b> - É a descrição usada na tag META. Ela geralmente é configurada por plugins SEO como o Yoast.</p>
 		<p><b>Nome do site</b> - É o nome que seu site recebe na configuração do Wordpress.</p>
