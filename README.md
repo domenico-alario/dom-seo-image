@@ -7,7 +7,7 @@ DOM SEO Image é um plugin de Wordpress que permite você melhorar o desempenho 
 2. Extraia a pasta `dom-seo-image-master` para dentro da pasta `wp-content/plugins` do seu Wordpress.
 3. Acesse o painel de controle do seu Wordpress.
 4. No menu principal vá em `plugins -> Plugins Instalados`.
-5. Encontre DOM SEO Image e clique em `Ativcar`.
+5. Encontre DOM SEO Image e clique em `Ativar`.
 
 ## Configurações
 
