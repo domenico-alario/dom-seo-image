@@ -9,7 +9,7 @@ DOM SEO Image é um plugin de Wordpress que permite você melhorar o desempenho 
 
 -- Configurações --
 
-Você mesmo poderá configurar como deseja que o plugin monte o ALT e o TITLE das suas imagens. Basta acessar no menu principal o link "DOM SEO Image". A configuração é totalmente intuitiva e rápida.
+Você mesmo pode configurar como deseja que o plugin monte o ALT e o TITLE das suas imagens. Basta acessar no menu principal o link "DOM SEO Image". A configuração é totalmente intuitiva e rápida.
 
 -- Dúvidas e Contribuições --
 
