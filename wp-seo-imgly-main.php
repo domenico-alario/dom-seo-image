@@ -80,17 +80,17 @@ class SEOImgly
 
 	public function addAdminPages()
 	{
-		add_menu_page($this->name, $this->name, 'manage_options', 'simgly_settings', array(
+		add_menu_page($this->name, $this->name, 'manage_options', 'dom_settings', array(
 			&$this,
 			'pageHandleSettings'
 		));
 
-		add_submenu_page('simgly_settings', $this->name . ' Configurações', 'Configurações', 'manage_options', 'simgly_settings', array(
+		add_submenu_page('dom_settings', $this->name . ' Configurações', 'Configurações', 'manage_options', 'dom_settings', array(
 			&$this,
 			'pageHandleSettings'
 		));
 
-		add_submenu_page('simgly_settings', $this->name . ' Sobre', 'Sobre', 'manage_options', 'simgly_about', array(
+		add_submenu_page('dom_settings', $this->name . ' Sobre', 'Sobre', 'manage_options', 'dom_about', array(
 			&$this,
 			'pageHandleAbout'
 		));
@@ -131,6 +131,8 @@ class SEOImgly
 
 	public function parsePostContent($content)
 	{
+		if(!get_option($this->key)) return $content;
+
 		$this->storePostData();
 		$replaced = preg_replace_callback('/<img[^>]+/', array($this, 'processHTML'), $content);
 		return $replaced;
@@ -164,21 +166,30 @@ class SEOImgly
 			$this->oldData['image_name'] = '';
 		}
 
-		$title = $this->generateImgAttr('title', $this->oldData);
-		$alt = $this->generateImgAttr('alt', $this->data);
+		// Verificação para saber se existem opções de ALT e de TITLE
+		// Caso não houver, os atributos originais serão mantidos
+		$options = get_option($this->key);
+		$title = (isset($options['img_title'])) ? $this->generateImgAttr('title', $this->oldData) : false;
+		$alt = (isset($options['img_alt'])) ? $this->generateImgAttr('alt', $this->data) : false;
+
+		$tag = $match[0];
 
 		// Configuração do ALT
-		if( $this->data['image_name'] )
-			$tag = preg_replace('/alt=".+?"/', 'alt="'.$alt.'"', $match[0]);
-		else
-			$tag = str_replace('<img', '<img alt="'.$alt.'"', $tag);
+		if($alt) {
+			if( $this->data['image_name'] )
+				$tag = preg_replace('/alt=".+?"/', 'alt="'.$alt.'"', $tag);
+			else
+				$tag = str_replace('<img', '<img alt="'.$alt.'"', $tag);
+		}
 
 
 		// Configuração do TITLE
-		if(!preg_match('/title=".+?"/', $tag))
-			$tag = str_replace('<img', '<img title="'.$title.'"', $tag);
-		else
-			$tag = preg_replace('/title=".+?"/', 'title="'.$title.'"', $tag);
+		if($title) {
+			if(!preg_match('/title=".+?"/', $tag))
+				$tag = str_replace('<img', '<img title="'.$title.'"', $tag);
+			else
+				$tag = preg_replace('/title=".+?"/', 'title="'.$title.'"', $tag);
+		} 
 
 		return $tag;
 	}
