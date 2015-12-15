@@ -7,7 +7,7 @@ Version: 1.0.1
 Author: João Pedro Alves & Doménico Alario
 */	
 
-require_once( dirname( __FILE__ ) . '/wp-seo-imgly-main.php' );
+require_once( dirname( __FILE__ ) . '/wp-seo-dom-main.php' );
 SEOImgly::init();
 
 
