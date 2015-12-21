@@ -223,7 +223,7 @@ class SEOImgly
 
 	public function loadHooks()
 	{
-		add_filter('the_content', array($this, 'parsePostContent'), 1);	
+		add_filter('the_content', array($this, 'parsePostContent'), 9999);	
 	}
 
 	public function loadActions()
