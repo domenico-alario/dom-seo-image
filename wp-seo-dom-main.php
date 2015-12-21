@@ -99,6 +99,7 @@ class SEOImgly
 	public function parseStr( $str )
 	{
 		$str = preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $str ) );
+		$str = preg_replace('/[^\da-z ]/i', '', $str);
 		$str = preg_replace('/[\s\.]/', '-', $str);
 		return strtolower($str);
 	}
@@ -145,7 +146,7 @@ class SEOImgly
 
 		foreach( $options as $option )
 		{
-			if( $option )
+			if( $option && !empty($data[$option]) )
 				$output[] = $data[$option];
 		}
 
@@ -157,8 +158,9 @@ class SEOImgly
 
 	public function processHTML($match)
 	{
-		preg_match('/alt="(.+?)"/', $match[0], $matches);
-		if( isset($matches[1]) ) {
+		preg_match('/alt="(.*?)"/', $match[0], $matches);
+
+		if( isset($matches[1]) && !empty(matches[1]) ) {
 			$this->data['image_name'] = $this->parseStr($matches[1]);
 			$this->oldData['image_name'] = $matches[1];
 		} else {
@@ -221,7 +223,7 @@ class SEOImgly
 
 	public function loadHooks()
 	{
-		add_filter('the_content', array($this, 'parsePostContent'), 500);	
+		add_filter('the_content', array($this, 'parsePostContent'), 1);	
 	}
 
 	public function loadActions()
