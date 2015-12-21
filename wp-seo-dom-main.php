@@ -160,7 +160,7 @@ class SEOImgly
 	{
 		preg_match('/alt="(.*?)"/', $match[0], $matches);
 
-		if( isset($matches[1]) && !empty(matches[1]) ) {
+		if( isset($matches[1]) && !empty($matches[1]) ) {
 			$this->data['image_name'] = $this->parseStr($matches[1]);
 			$this->oldData['image_name'] = $matches[1];
 		} else {
