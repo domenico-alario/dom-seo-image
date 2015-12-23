@@ -1,4 +1,4 @@
-<h2><?php print $this->name ?> - <b><?php _e('About', 'dom-seo-image') ?></b></h2>
+<h2><?php echo $this->name ?> - <b><?php _e('About', 'dom-seo-image') ?></b></h2>
 <div class="postbox">
 	<div class="inside">
 	<p><b><?php _e('Thank you so much for trusting us your images! We believe that images tell stories and our work helps more people can know about your stories.', 'dom-seo-image') ?></b></p>
