@@ -1,6 +1,7 @@
 === Plugin Name ===
 Contributors: João Pedro Alves & Domenico Alario
 Tags: seo, images, Post, admin, google, attachment, optimize, photo, picture, image, media, photos, pictures
+Donate link: dbalario@hotmail.com
 Requires at least: 2.7
 Tested up to: 4.3.1
 Stable tag: stable
@@ -50,6 +51,11 @@ It replaces your image tags and ads ALT and TITLE tags which are essential for s
 = How can I contact you? =
 
 Emailing us to dbalario@hotmail.com
+
+
+== Screenshots ==
+
+1. You can set up your settings in a easy and quick way!
 
 
 == Changelog ==
