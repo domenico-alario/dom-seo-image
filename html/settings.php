@@ -55,5 +55,6 @@
 		</table>
 	</div>
 </div>
+<input type="hidden" name="_wpnonce" value="<?php print $nonce ?>" />
 <input type="submit" name="submit" class="button button-primary" value="<?php _e('Update Settings', 'dom-seo-image') ?>" />
 </form>

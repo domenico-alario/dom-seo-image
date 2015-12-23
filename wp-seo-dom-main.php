@@ -229,6 +229,11 @@ class SEOImgly
 	{
 		if (isset($_POST['submit']))
 		{
+			if (!wp_verify_nonce($_POST['_wpnonce'], 'dom-seo-image' ))
+			{
+     			die('Access Denied'); 
+			} 
+
 			// Validating POST data
 			if($this->validatePostData('img_title') && $this->validatePostData('img_alt'))
 			{
