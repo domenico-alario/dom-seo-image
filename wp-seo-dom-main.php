@@ -210,15 +210,37 @@ class SEOImgly
 		return $post;
 	}
 
+	private function validatePostData($postKey)
+	{
+		// List all allowed keys
+		$validKeys = array_keys(SEOImgly::$options);
+
+		// Verify the POST data
+		foreach( $_POST[$postKey] as $postValue )
+		{
+			if(!empty($postValue) && !in_array($postValue, $validKeys))
+				return false;
+		}
+
+		return true;
+	}
+
 	public function pageHandleSettings()
 	{
 		if (isset($_POST['submit']))
 		{
-			$options = array(
-				'img_title' => $_POST['img_title'],
-				'img_alt' => $_POST['img_alt']
-			);
-			update_option($this->key, $options);
+			// Validating POST data
+			if($this->validatePostData('img_title') && $this->validatePostData('img_alt'))
+			{
+				$options = array(
+					'img_title' => $_POST['img_title'],
+					'img_alt' => $_POST['img_alt']
+				);
+				update_option($this->key, $options);
+			} else {
+				$errorSubmit = true;
+			}
+			
 		}
 
 		include( dirname( __FILE__ ) . '/html/settings.php' );
