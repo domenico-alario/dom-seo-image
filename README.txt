@@ -1,7 +1,6 @@
 === Plugin Name ===
 Contributors: João Pedro Alves & Domenico Alario
 Tags: seo, images, Post, admin, google, attachment, optimize, photo, picture, image, media, photos, pictures
-Donate link: dbalario@hotmail.com
 Requires at least: 2.7
 Tested up to: 4.3.1
 Stable tag: stable
