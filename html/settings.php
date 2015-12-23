@@ -1,9 +1,9 @@
 <br />
-<h2><?= $this->name ?> - <b><?php _e('Settings', 'dom-seo-image') ?></b></h2>
+<h2><?php print $this->name ?> - <b><?php _e('Settings', 'dom-seo-image') ?></b></h2>
 
 <?php if( isset($_POST['submit']) && !isset($errorSubmit)): ?>
 <div id="message" class="updated fade">
-	<p><b><?= $this->name ?></b> - <?php _e('Settings has been updated!', 'dom-seo-image') ?></p>
+	<p><b><?php print $this->name ?></b> - <?php _e('Settings has been updated!', 'dom-seo-image') ?></p>
 </div>
 <?php endif ?>
 
@@ -25,7 +25,7 @@
 	</div>
 </div>
 <br />
-<form method="POST" action="<?= esc_url($_SERVER['REQUEST_URI']) ?>">
+<form method="POST" action="<?php print esc_url($_SERVER['REQUEST_URI']) ?>">
 <div class="postbox">
 	<div class="inside">
 		<h3><?php _e('Settings') ?></h3>
@@ -35,8 +35,8 @@
 					<label for="input-alt"><?php _e("Image <u>ALT</u> Attribute", 'dom-seo-image') ?></label>
 				</th>
 				<td>
-					<!-- <input name="alt" id="input-alt" type="text" value="<?= $data['alt'] ?>" /> -->
-					<?= SEOImgly::generateHTMLOptions('img_alt') ?>
+					<!-- <input name="alt" id="input-alt" type="text" value="<?php print $data['alt'] ?>" /> -->
+					<?php print SEOImgly::generateHTMLOptions('img_alt') ?>
 					<br />
 			        <span class="description"><?php _e('Leave blank to not use it', 'dom-seo-image') ?></span>
 				</td>
@@ -47,7 +47,7 @@
 					
 				</th>
 				<td>
-					<?= SEOImgly::generateHTMLOptions('img_title') ?>
+					<?php print SEOImgly::generateHTMLOptions('img_title') ?>
 					<br />
 			        <span class="description"><?php _e('Leave blank to not use it', 'dom-seo-image') ?></span>
 				</td>

@@ -243,6 +243,7 @@ class SEOImgly
 			
 		}
 
+		$nonce = wp_create_nonce('dom-seo-image');
 		include( dirname( __FILE__ ) . '/html/settings.php' );
 	}
 
