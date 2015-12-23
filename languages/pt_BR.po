@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DOM Seo Image\n"
+"POT-Creation-Date: 2015-12-23 18:03-0300\n"
+"PO-Revision-Date: 2015-12-23 18:03-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\web\\workana\\plugin\\wp-content\\plugins\\seo-"
+"imgly\n"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:12
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:22
+msgid "Site name"
+msgstr "Nome do site"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:13
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:18
+msgid "Image name"
+msgstr "Nome da imagem"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:14
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:19
+msgid "Post title"
+msgstr "Título do post"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:15
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:20
+msgid "Post category"
+msgstr "Categoria do post"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:16
+msgid "Meta description"
+msgstr "Descrição meta"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:96
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:2
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:31
+msgid "Settings"
+msgstr "Configurações"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/wp-seo-dom-main.php:101
+msgid "About"
+msgstr "Sobre"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/about.php:4
+msgid ""
+"Thank you so much for trusting us your images! We believe that images tell "
+"stories and our work helps more people can know about your stories."
+msgstr ""
+"Muito obrigado por nos confiar suas imagens! Nós do DOM SEO Image "
+"acreditamos que imagens contam histórias e nosso trabalho ajuda que mais "
+"pessoas possam saber sobre suas histórias."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/about.php:5
+msgid ""
+"This plugin was developed with the latest update features and the best "
+"techniques in SEO for Google to index your images in search engines and "
+"increase the ranking of your pages and posts."
+msgstr ""
+"Este plugin foi desenvolvido com os ultimos recursos de atualização e as "
+"melhores técnicas em SEO para que o Google indexe suas imagens nos "
+"buscadores e aumente o ranking de suas páginas e posts."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/about.php:7
+msgid "Developed by:"
+msgstr "Desenvolvido por:"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:6
+msgid "Settings has been updated!"
+msgstr "Configurações salvas com sucesso!"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:13
+msgid "Settings Options"
+msgstr "Opções de Configuração"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:14
+msgid ""
+"<b>DOM SEO Image</b> is the plugin which automatically set the <i>ALT</i> "
+"and <i>TITLE</i> attribute of your posts images. In this way, you'll be "
+"improving the SEO traffic of your website."
+msgstr ""
+"<b>DOM SEO Image</b> é o plugin que possibilita a configuração automática "
+"dos atributos <i>ALT</i> e <i>TITLE</i> das imagens dos seus posts. Desse "
+"jeito você estará melhorando o tráfego SEO do seu site."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:16
+msgid "Set up"
+msgstr "Faça sua Configuração"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:17
+msgid ""
+"Below, in an easy and quickly way, you can set up how the <b>ALT</b> and "
+"<b>TITLE</b> tags of images have to be."
+msgstr ""
+"Abaixo você pode de forma prática e rápida montar como as tags <b>ALT</b> e "
+"<b>TITLE</b> das suas imagens devem ser."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:18
+msgid "The title of the image that whas uploaded."
+msgstr ""
+"O nome da imagem é o nome dado a uma imagem no momento que você a carrega no "
+"seu post. "
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:18
+msgid ""
+"To avoid duplicate names, it's highly recommended always use this option."
+msgstr ""
+"Para evitar duplicidade nos nomes gerados é altamente recomendado sempre "
+"utilizar essa opção."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:19
+msgid "The title given to your post."
+msgstr "O título do post é o título dado a sua postagem na hora da criação."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:20
+msgid "The name of the category that the post belongs to"
+msgstr "Nome da categoria a qual o post pertecem."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:21
+msgid "Meta Description"
+msgstr "Descrição meta"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:21
+msgid ""
+"Description used in META tag. It is usually setted up using SEO plugins like "
+"Yoast."
+msgstr ""
+"É a descrição usada na tag META. Ela geralmente é configurada por plugins "
+"SEO como o Yoast."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:22
+msgid "The name of the site that is setted up on Wordpress settings"
+msgstr "É o nome que seu site recebe na configuração do Wordpress."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:24
+msgid ""
+"The tag will be showed in the format <b>option1-option2-option3</b>... You "
+"don't need choose all options."
+msgstr ""
+"A tag configurada terá o valor no formato <b>opção1-opção2-opção3</b>... "
+"Você não precisa utilizar todos os valores."
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:35
+msgid "Image <u>ALT</u> Attribute"
+msgstr "Atributo <u>ALT</u> da Imagem"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:41
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:52
+msgid "Leave blank to not use it"
+msgstr "Deixe branco para não utilizar"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:46
+msgid "Image <u>TITLE</u> Attribute"
+msgstr "Atributo <u>TITLE</u> da Imagem"
+
+#: C:\web\workana\plugin\wp-content\plugins\seo-imgly/html/settings.php:58
+msgid "Update Settings"
+msgstr "Atualizar Configurações"

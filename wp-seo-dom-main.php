@@ -5,15 +5,23 @@ class SEOImgly
 
 	public $key = 'wp-seo-imgly';
 
-	static $options = array(
-		'image_name' => 'Nome da imagem',
-		'post_title' => 'Título do post',
-		'post_cat'   => 'Categoria do post',
-		'meta_desc'  => 'Descrição da META',
-		'site_name'  => 'Nome do site'
-	);
+	static $options = array();
 
-	public function __construct() {}
+	public function __construct() {
+		SEOImgly::$options = array(
+			'site_name' 	=> 	__('Site name', 'dom-seo-image'),
+			'image_name' 	=> 	__('Image name', 'dom-seo-image'),
+			'post_title' 	=> 	__('Post title', 'dom-seo-image'),
+			'post_cat' 		=> 	__('Post category', 'dom-seo-image'),
+			'meta_desc' 	=> 	__('Meta description', 'dom-seo-image')
+		);
+
+		// Loading language file
+		$localeName = get_locale();
+		$moFileName = dirname(__FILE__) . "/languages/{$localeName}.mo";
+		load_textdomain('dom-seo-image', $moFileName );
+		load_plugin_textdomain('dom-seo-image', false, dirname( plugin_basename( __FILE__ )) . '/languages/');
+	}
 
 	public static function generateHTMLOptions($name)
 	{
@@ -85,12 +93,12 @@ class SEOImgly
 			'pageHandleSettings'
 		));
 
-		add_submenu_page('dom_settings', $this->name . ' Configurações', 'Configurações', 'manage_options', 'dom_settings', array(
+		add_submenu_page('dom_settings', $this->name . ' ' . __('Settings', 'dom-seo-image'), __('Settings', 'dom-seo-image'), 'manage_options', 'dom_settings', array(
 			&$this,
 			'pageHandleSettings'
 		));
 
-		add_submenu_page('dom_settings', $this->name . ' Sobre', 'Sobre', 'manage_options', 'dom_about', array(
+		add_submenu_page('dom_settings', $this->name . ' ' . __('About', 'dom-seo-image'), __('About', 'dom-seo-image'), 'manage_options', 'dom_about', array(
 			&$this,
 			'pageHandleAbout'
 		));

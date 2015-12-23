@@ -1,9 +1,9 @@
-<h2><?= $this->name ?> - <b>Sobre</b></h2>
+<h2><?= $this->name ?> - <b><?= __('About', 'dom-seo-image') ?></b></h2>
 <div class="postbox">
 	<div class="inside">
-	<p><b>Muito obrigado por nos confiar suas imagens! Nós do <?= $this->name ?> acreditamos que imagens contam histórias e nosso trabalho ajuda que mais pessoas possam saber sobre suas histórias.</b></p>
-	<p>Este plugin foi desenvolvido com os ultimos recursos de atualização e as melhores técnicas em SEO para que o Google indexe suas imagens nos buscadores e aumente o ranking de suas páginas e posts.</p>
+	<p><b><?= __('Thank you so much for trusting us your images! We believe that images tell stories and our work helps more people can know about your stories.', 'dom-seo-image') ?></b></p>
+	<p><?= __('This plugin was developed with the latest update features and the best techniques in SEO for Google to index your images in search engines and increase the ranking of your pages and posts.', 'dom-seo-image') ?></p>
 	<hr />
-	<p>Desenvolvido por: <i>João Pedro Alves</i> & <i>Doménico Alario</i></p>
+	<p><?= __('Developed by:', 'dom-seo-image') ?> <i>João Pedro Alves</i> & <i>Domenico Alario</i></p>
 	</div>
 </div>
